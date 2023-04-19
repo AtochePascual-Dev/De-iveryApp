@@ -2,21 +2,32 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="La mejor app para realizar tus pedidos">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Delivery</title>
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- Css -->
-    <link rel="stylesheet" href="/build/css/app.css">
+	<meta charset="UTF-8">
+	<meta name="description" content="La mejor app para realizar tus pedidos">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>App Delivery</title>
+	<!-- Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+	<!-- Css -->
+	<link rel="stylesheet" href="/build/css/app.css">
 </head>
 
 <body>
 
+	<header class="header contenedor">
+		<figure class="header__figure">
+			<img class="header__img" src="./build/img/logo.svg" alt="logo" width="150" height="auto">
+		</figure>
+
+		<nav class="navegacion">
+			<a class="navegacion__link" href="#">Iniciar Sesión</a>
+			<a class="navegacion__link" href="#">Crear Cuenta</a>
+			<a class="navegacion__link navegacion__link--registrar" href="#">Registrar Restaurant</a>
+		</nav>
+	</header>
 </body>
 
 </html>

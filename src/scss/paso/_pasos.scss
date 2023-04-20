@@ -1,0 +1,42 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.pasos {
+  overflow: hidden;
+  margin-top: 5rem;
+
+  span {
+    display: block;
+    font-size: 2rem;
+  }
+
+  &__titulo {
+    text-align: center;
+    color: v.$blanco;
+  }
+
+  &__contenido {
+    background-color: v.$primario;
+  }
+
+  &__grid {
+    display: grid;
+    justify-items: center;
+
+    @include m.tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__figure {
+    max-width: 30rem;
+  }
+
+  &__img {
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1) rotate(-6deg);
+    }
+  }
+}

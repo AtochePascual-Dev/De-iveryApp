@@ -1,0 +1,22 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.testimoniales {
+  padding: 5rem 0;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+
+    @include m.tablet {
+      grid-template-columns: repeat(12, 1fr);
+      justify-items: unset;
+      gap: 1rem;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.descargar {
+  padding: 5rem 0;
+  background-color: v.$grisClaro;
+
+  &__grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 3rem;
+
+    @include m.tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.favoritos {
+  padding: 5rem 0;
+  background-color: v.$grisClaro;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 2rem;
+
+    @include m.tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

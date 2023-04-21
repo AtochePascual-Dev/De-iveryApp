@@ -1,0 +1,41 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.favorito {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: v.$blanco;
+  box-shadow: 5px 5px 9px 0px #cfc9c9;
+
+  @include m.tablet {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__contenido {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__nombre {
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+    color: v.$primario;
+  }
+
+  &__calificacion {
+    width: 15rem;
+  }
+  &__descripcion {
+    color: v.$secundario;
+  }
+}
